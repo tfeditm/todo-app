@@ -70,6 +70,16 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   
   
+  ///// Add event to the new list button  \\\\\
+  
+  newListButton.addEventListener("click", function() {
+    while (toDoList.firstChild) {
+      toDoList.removeChild(toDoList.firstChild);
+    }
+    toDoFormText.focus();
+  });
+  
+  
   ///// Style list items \\\\\
   
   toDoList.addEventListener("click", function(event) {
