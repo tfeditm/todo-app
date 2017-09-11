@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
   toDoList.addEventListener("click", function(event) {
     if(event.target && event.target.nodeName === "LI") {
       var item = event.target;
-        if (item.style.textDecoration === "none") {
+        if (item.style.textDecoration === "" || item.style.textDecoration === "none") {
           item.style.textDecoration = "line-through";
         } else {
           item.style.textDecoration = "none";
