@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function(){
   var toDoFormText = document.createElement("input");
   toDoFormText.id = "todo-form-text";
   toDoFormText.setAttribute("type", "text");
-  toDoFormText.setAttribute("placeholder", "Things To Do");
+  //toDoFormText.setAttribute("placeholder", "Things To Do");
   toDoFormText.setAttribute("autofocus", "true");
   
   var toDoFormButton = document.createElement("button");
-  toDoFormButton.id = "todo-form-submit";
+  toDoFormButton.id = "todo-form-button";
   toDoFormButton.setAttribute("type", "button");
   toDoFormButton.innerHTML = "To The List";
   
@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){
     while (toDoList.firstChild) {
       toDoList.removeChild(toDoList.firstChild);
     }
+    newListButton.style.display = "none";
     toDoFormText.focus();
   });
   
