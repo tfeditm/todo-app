@@ -5,17 +5,19 @@
 body {
   background: url(assets/todo.png) black;
   padding: 5%;
-  color: hsla(187,100%,36%,1);
+  color: hsla(187, 100%, 36%, 1);
   font-family: 'Capriola', sans-serif;
   text-align: center;
 }
 
-h1, form, ul {
+h1,
+form,
+ul {
   margin-bottom: 3rem;
 }
 
 #page-title {
-  color: rgba(182,0,22,.6);
+  color: rgba(182, 0, 22, .6);
   font-size: 4rem;
   line-height: 4rem;
   margin-top: 2rem;
@@ -29,59 +31,67 @@ h1, form, ul {
 
 @media screen and (min-width: 700px) {
   #todo-wrapper {
-  width: 80%;
-}
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1224px) {
   #todo-wrapper {
-  width: 60%;
-}
+    width: 60%;
+  }
 }
 
-input:focus, button:focus {
+input:focus,
+button:focus {
   outline: none;
 }
 
-input, button {
+input,
+button {
   font-family: 'Capriola', sans-serif;
   padding: .6rem;
   font-size: 1rem;
   border: none;
 }
 
-#todo-form-button, #new-list-button {
+#todo-form-button,
+#new-list-button {
   border-radius: 9px;
-  color: rgba(0,0,0,.6);
+  color: rgba(0, 0, 0, .6);
   width: 100%;
 }
 
-#todo-form-button:hover, #todo-form-button:focus, #new-list-button:hover, #new-list-button:focus {
-  color: rgba(0,0,0,.9);
+#todo-form-button:hover,
+#todo-form-button:focus,
+#new-list-button:hover,
+#new-list-button:focus {
+  color: rgba(0, 0, 0, .9);
 }
 
 #todo-form-button {
-  background-color: hsla(187,50%,36%,1);
+  background-color: hsla(187, 50%, 36%, 1);
 }
 
-#todo-form-button:hover, #todo-form-button:focus {
-  background-color: hsla(187,80%,36%,1);
+#todo-form-button:hover,
+#todo-form-button:focus {
+  background-color: hsla(187, 80%, 36%, 1);
 }
 
 #todo-form-button:active {
-  box-shadow: 0 0 9px hsla(187,100%,90%,.6);
+  box-shadow: 0 0 9px hsla(187, 100%, 90%, .6);
 }
 
 #new-list-button {
-  background-color: hsla(64,50%,36%,1);
+  background-color: hsla(64, 50%, 36%, 1);
 }
 
-#new-list-button:hover, #new-list-button:focus {
-  background-color: hsla(64,70%,36%,1);
+#new-list-button:hover,
+#new-list-button:focus {
+  background-color: hsla(64, 70%, 36%, 1);
 }
 
 #new-list-button:active {
-  box-shadow: 0 0 9px hsla(64,100%,100%,.6);
+  box-shadow: 0 0 9px hsla(64, 100%, 100%, .6);
 }
 
 #todo-form-text {
@@ -111,4 +121,5 @@ input, button {
 
 #todo-list li {
   line-height: 1.6rem;
+  cursor: pointer;
 }
